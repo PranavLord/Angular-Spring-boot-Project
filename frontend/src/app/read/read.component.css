@@ -1,0 +1,80 @@
+/* General Container Styling */
+.read-employee-container {
+    margin: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Header Styling */
+  h2 {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  /* Error Message */
+  .alert-danger {
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  /* Table Styling */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  /* Table Header Styling */
+  .table-header {
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+  }
+  
+  /* Table Row Styling */
+  .table-row:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  .table-row:nth-child(odd) {
+    background-color: #ffffff;
+  }
+  
+  .table-row td {
+    padding: 12px;
+    text-align: left;
+    font-size: 14px;
+  }
+  
+  /* Table Cell Styling */
+  th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+  }
+  
+  /* Currency Formatting */
+  table .currency {
+    text-align: right;
+  }
+  
+  /* No Data Styling */
+  .no-data {
+    text-align: center;
+    font-size: 18px;
+    color: #6c757d;
+  }
+  

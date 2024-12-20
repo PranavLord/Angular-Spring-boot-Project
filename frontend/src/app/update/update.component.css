@@ -1,0 +1,110 @@
+/* General Styles for the Update Form */
+.update-employee-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Heading Styling */
+  h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Styling for the alert box */
+  .alert {
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  .alert-danger {
+    background-color: #f8d7da;
+    color: #721c24;
+  }
+  
+  /* Styling for form group containers */
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  /* Label Styling */
+  label {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #555;
+    display: block;
+    margin-bottom: 8px;
+  }
+  
+  /* Input Fields */
+  input[type="text"],
+  input[type="number"],
+  input[type="email"] {
+    width: 100%;
+    padding: 12px; /* Uniform padding across inputs */
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: border 0.3s ease-in-out;
+  }
+  
+  /* Focus State for Inputs */
+  input[type="text"]:focus,
+  input[type="number"]:focus,
+  input[type="email"]:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.5); /* Enhanced focus visibility */
+  }
+  
+  /* Styling for the Submit Button */
+  button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Hover State for Submit Button */
+  button[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  
+  /* No data message */
+  .no-data {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #777;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+  }
+  
+  /* Mobile Responsiveness */
+  @media (max-width: 600px) {
+    .update-employee-container {
+      padding: 15px;
+      background-color: #f0f0f0; /* Slightly darker background for contrast */
+    }
+  
+    h2 {
+      font-size: 1.6rem; /* Adjust font size for mobile */
+    }
+  
+    button[type="submit"] {
+      font-size: 1rem;
+    }
+  }
+  

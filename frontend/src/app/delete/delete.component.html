@@ -1,0 +1,40 @@
+<div class="container">
+    <h2>Employee List</h2>
+
+    <div *ngIf="errorMessage" class="alert alert-danger">
+        {{ errorMessage }}
+    </div>
+    
+    <table *ngIf="employees.length > 0" class="employee-table">
+        <thead>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Gender</th>
+                <th>Salary</th>
+                <th>Job Title</th>
+                <th>Email</th>
+                <th>Phone No</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let employee of employees">
+                <td>{{ employee.firstName }}</td>
+                <td>{{ employee.lastName }}</td>
+                <td>{{ employee.gender }}</td>
+                <td>{{ employee.salary }}</td>
+                <td>{{ employee.jobTitle }}</td>
+                <td>{{ employee.email }}</td>
+                <td>{{ employee.phoneNo }}</td>
+                <td>
+                    <button (click)="deleteEmployee(employee.id)" class="delete-button">Delete</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div *ngIf="employees.length === 0" class="no-employees">
+        No employees found.
+    </div>
+</div>

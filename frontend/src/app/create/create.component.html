@@ -1,0 +1,96 @@
+<div class="create-employee-form">
+    <h2>Create Employee</h2>
+    <form (ngSubmit)="onSubmit()" #employeeForm="ngForm">
+      <div class="form-group">
+        <label for="firstName">First Name</label>
+        <input
+          type="text"
+          id="firstName"
+          required
+          [(ngModel)]="employee.firstName"
+          name="firstName"
+          class="form-control"
+        />
+      </div>
+  
+      <div class="form-group">
+        <label for="lastName">Last Name</label>
+        <input
+          type="text"
+          id="lastName"
+          required
+          [(ngModel)]="employee.lastName"
+          name="lastName"
+          class="form-control"
+        />
+      </div>
+  
+      <div class="form-group">
+        <label for="gender">Gender</label>
+        <select
+          id="gender"
+          required
+          [(ngModel)]="employee.gender"
+          name="gender"
+          class="form-control"
+        >
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+          <option value="Other">Other</option>
+        </select>
+      </div>
+  
+      <div class="form-group">
+        <label for="salary">Salary</label>
+        <input
+          type="number"
+          id="salary"
+          required
+          [(ngModel)]="employee.salary"
+          name="salary"
+          class="form-control"
+        />
+      </div>
+  
+      <div class="form-group">
+        <label for="jobTitle">Job Title</label>
+        <input
+          type="text"
+          id="jobTitle"
+          required
+          [(ngModel)]="employee.jobTitle"
+          name="jobTitle"
+          class="form-control"
+        />
+      </div>
+  
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input
+          type="email"
+          id="email"
+          required
+          [(ngModel)]="employee.email"
+          name="email"
+          class="form-control"
+        />
+      </div>
+  
+      <div class="form-group">
+        <label for="phoneNo">Phone Number</label>
+        <input
+          type="text"
+          id="phoneNo"
+          required
+          [(ngModel)]="employee.phoneNo"
+          name="phoneNo"
+          class="form-control"
+        />
+      </div>
+  
+      <div class="form-actions">
+        <button type="submit" class="btn btn-primary">Create Employee</button>
+      </div>
+    </form>
+  </div>
+  

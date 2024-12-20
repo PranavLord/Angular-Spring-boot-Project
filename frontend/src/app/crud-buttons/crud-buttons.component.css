@@ -1,0 +1,47 @@
+/* Container to center and align buttons */
+.crud-buttons {
+    display: flex;
+    flex-direction: column; /* Stack buttons vertically */
+    align-items: center;    /* Center buttons horizontally */
+    justify-content: center;
+    height: 100vh;          /* Full screen height */
+    background: linear-gradient(135deg, #4caf50, #2196f3); /* Gradient background */
+  }
+  
+  /* Buttons styling */
+  button {
+    margin: 10px;                    /* Space between buttons */
+    padding: 15px 30px;              /* Padding for a better click area */
+    font-size: 1.2em;                /* Larger font for better visibility */
+    font-weight: bold;               /* Make text bold */
+    color: white;                    /* Text color */
+    background-color: #ff9800;       /* Bright orange background */
+    border: none;                    /* No borders */
+    border-radius: 8px;              /* Rounded corners */
+    cursor: pointer;                 /* Pointer cursor on hover */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    transition: transform 0.2s, box-shadow 0.2s; /* Smooth animations */
+  }
+  
+  /* Hover effect */
+  button:hover {
+    transform: translateY(-3px);     /* Lift the button slightly */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3); /* Add more shadow */
+    background-color: #f57c00;       /* Darker orange on hover */
+  }
+  
+  /* Button focus (keyboard accessibility) */
+  button:focus {
+    outline: 3px solid #ffcc80;      /* Highlight button focus */
+    outline-offset: 2px;
+  }
+  
+  /* Adjust buttons for smaller screens */
+  @media (max-width: 768px) {
+    button {
+      width: 80%;                   /* Make buttons take most of the width */
+      font-size: 1em;               /* Adjust font size */
+      padding: 10px 20px;           /* Reduce padding */
+    }
+  }
+  

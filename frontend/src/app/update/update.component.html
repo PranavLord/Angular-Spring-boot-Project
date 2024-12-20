@@ -1,0 +1,51 @@
+    <div class="update-employee-container" *ngIf="employee">
+        <h2>Update Employee</h2>
+    
+        <div *ngIf="errorMessage" class="alert alert-danger">
+        {{ errorMessage }}
+        </div>
+    
+        <form (ngSubmit)="onSubmit()">
+        <div class="form-group">
+            <label for="firstName">First Name</label>
+            <input type="text" id="firstName" [(ngModel)]="employee.firstName" name="firstName" class="form-control" required />
+        </div>
+    
+        <div class="form-group">
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lastName" [(ngModel)]="employee.lastName" name="lastName" class="form-control" required />
+        </div>
+    
+        <div class="form-group">
+            <label for="gender">Gender</label>
+            <input type="text" id="gender" [(ngModel)]="employee.gender" name="gender" class="form-control" required />
+        </div>
+    
+        <div class="form-group">
+            <label for="salary">Salary</label>
+            <input type="number" id="salary" [(ngModel)]="employee.salary" name="salary" class="form-control" required />
+        </div>
+    
+        <div class="form-group">
+            <label for="jobTitle">Job Title</label>
+            <input type="text" id="jobTitle" [(ngModel)]="employee.jobTitle" name="jobTitle" class="form-control" required />
+        </div>
+    
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" [(ngModel)]="employee.email" name="email" class="form-control" required />
+        </div>
+    
+        <div class="form-group">
+            <label for="phoneNo">Phone No</label>
+            <input type="text" id="phoneNo" [(ngModel)]="employee.phoneNo" name="phoneNo" class="form-control" required />
+        </div>
+    
+        <button type="submit" class="btn btn-primary">Update Employee</button>
+        </form>
+    </div>
+    
+    <div *ngIf="!employee" class="no-data">
+        <p>Employee data not found.</p>
+    </div>
+    

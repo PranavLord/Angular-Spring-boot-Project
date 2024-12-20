@@ -1,0 +1,46 @@
+<div class="read-employee-container">
+    <h2>Employee List</h2>
+  
+    <!-- Error Message -->
+    <div *ngIf="errorMessage" class="alert alert-danger">
+      {{ errorMessage }}
+    </div>
+  
+    <!-- Employee Table -->
+    <table *ngIf="employees.length > 0" class="table table-bordered">
+      <thead>
+        <tr class="table-header">
+          <th>ID</th>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Gender</th>
+          <th>Salary</th>
+          <th>Job Title</th>
+          <th>Email</th>
+          <th>Phone No</th>
+          <th>Action</th> <!-- Add Action column -->
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let employee of employees" class="table-row">
+          <td>{{ employee.id }}</td>
+          <td>{{ employee.firstName }}</td>
+          <td>{{ employee.lastName }}</td>
+          <td>{{ employee.gender }}</td>
+          <td>{{ employee.salary | currency }}</td>
+          <td>{{ employee.jobTitle }}</td>
+          <td>{{ employee.email }}</td>
+          <td>{{ employee.phoneNo }}</td>
+          <td>
+            <button (click)="onUpdate(employee.id)" class="btn btn-primary" *ngIf="employee.id">Update</button>
+          </td> <!-- Update button -->
+        </tr>
+      </tbody>
+    </table>
+  
+    <!-- No Data Found -->
+    <div *ngIf="employees.length === 0 && !errorMessage">
+      <p class="no-data">No employees found in the database.</p>
+    </div>
+  </div>
+  

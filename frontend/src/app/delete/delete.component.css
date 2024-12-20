@@ -1,0 +1,85 @@
+/* General Container Styling */
+.container {
+    margin: 20px auto;
+    width: 90%;
+    font-family: Arial, sans-serif;
+    max-width: 1200px;
+}
+
+/* Header Styling */
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Error Message Styling */
+.alert {
+    color: red;
+    font-size: 1.1rem;
+    text-align: center;
+    background-color: #f8d7da;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+/* Table Styling */
+.employee-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.employee-table th, .employee-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Header Cell Styling */
+.employee-table th {
+    background-color: #f4f4f4;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Row Styling */
+.employee-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.employee-table tr:hover {
+    background-color: #f1f1f1;
+    cursor: pointer;
+}
+
+/* Empty Table Message */
+.no-employees {
+    text-align: center;
+    color: #888;
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+
+/* Delete Button Styling */
+.delete-button {
+    padding: 8px 15px;
+    background-color: #ff5f57;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Delete Button Hover Effect */
+.delete-button:hover {
+    background-color: #e0554d;
+}
+
+/* Table Cell Hover Effect */
+.employee-table td:hover {
+    background-color: #f1f1f1;
+}
